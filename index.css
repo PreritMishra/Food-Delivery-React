@@ -49,3 +49,7 @@
   object-fit: cover; /* Ensures the image maintains its aspect ratio and covers the entire container */
 
 }
+
+.filter-btn:hover {
+  cursor: pointer;
+}
