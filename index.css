@@ -39,8 +39,6 @@
 
 .search{
   padding: 10px;
-  border: 1px solid black;
-  margin-bottom: 10px;
 
 }
 
@@ -50,6 +48,34 @@
 
 }
 
+.filter-btn {
+  padding: 10px;
+  width: 10%;
+}
+
 .filter-btn:hover {
   cursor: pointer;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-card {
+  width: 200px;
+  height: 400px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f0f0f0 ;
+}
+
+.login{
+  padding: 0 20 ;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.filter {
+  display: flex;
 }
