@@ -35,7 +35,6 @@ const Body = () => {
                             (res) => res.info.name.toLowerCase().includes(searchText.toLowerCase())
                         );
                         setFilteredRestaurant(filterdRestaurant);
-
                     }}>Search</button>
                 </div>
 
@@ -43,9 +42,9 @@ const Body = () => {
                     className="filter-btn"
                     onClick={() => {
                         const filterdList = listOfRestaurant.filter(
-                            (res) => res.info.avgRating > 3.7
+                            (res) => res.info.avgRating > 4
                         );
-                        setListOfRestaurant(filterdList);
+                        setFilteredRestaurant(filterdList)
                     }}
                 >
                     Top Rated Restaurant
