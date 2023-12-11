@@ -14,10 +14,10 @@ class About extends Component {
     render() {
         //console.log("Parent render")
         return (
-            <div>
-                <h1>About US</h1>
+            <div className="m-4 p-4 text-center text-xl">
+                <h1 className="font-bold text-3xl">About US</h1>
                 <h2> This is Food Delivery App</h2>
-                <UserClass name = {"Prerit Mishra"} location = {"Prayagraj"} />
+                <UserClass />
             </div>
         )
     }
