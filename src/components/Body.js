@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, {withPromotedLabel} from "./RestaurantCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -10,6 +10,9 @@ const Body = () => {
     const [filterdRestaurant,setFilteredRestaurant] = useState([]);
     const [searchText, setSearchText] = useState("");
 
+    const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
+
+    console.log(listOfRestaurant)
     useEffect(()=>{
         fetchData();
     }, []);    
@@ -63,7 +66,11 @@ const Body = () => {
                 filterdRestaurant.map((restaurant) => {
                   return <Link
                    key={restaurant.info.id}
-                   to={"/restaurants/" + restaurant.info.id}><RestaurantCard resData={restaurant} /></Link>;
+                   to={"/restaurants/" + restaurant.info.id}>
+                    {/**if the restaurant is promoted then add a pomoted label to it */
+                        restaurant.info.promoted ? (<RestaurantCardPromoted resData={restaurant} />) : (<RestaurantCard resData={restaurant} />)
+                    }
+                    </Link>;
                 })
               }
             </div>
