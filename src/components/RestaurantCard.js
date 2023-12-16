@@ -2,10 +2,10 @@ import { CDN_URL } from "../utils/constants";
 
 const RestaurantCard = (props) => {
     //(props) => {resName,cuisines}(Destructuring of Object)
-    const { cloudinaryImageId, name, cuisines, avgRating,costForTwo } = props.resData.info;
-
+    const {resData} = props;
+    const { cloudinaryImageId, name, cuisines, avgRating,costForTwo } = resData.info || {};
     return (
-        <div className="m-5 p-5 w-[250px] rounded-lg bg-gray-100 hover:bg-slate-300">
+        <div data-testid='resCard' className="m-5 p-5 w-[250px] rounded-lg bg-gray-100 hover:bg-slate-300">
             <img 
             className="rounded-lg"
             alt="logo" src= { CDN_URL

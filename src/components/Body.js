@@ -12,7 +12,6 @@ const Body = () => {
 
     const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
-    console.log(listOfRestaurant)
     useEffect(()=>{
         fetchData();
     }, []);    
@@ -34,7 +33,7 @@ const Body = () => {
         <div className="body">
             <div className="filter flex">
                 <div className="search m-4 p-4">
-                    <input type="text" className="border border-solid border-black" value={searchText} onChange={
+                    <input type="text" data-testid = "searchInput" className="border border-solid border-black" value={searchText} onChange={
                         (e) => {
                             setSearchText(e.target.value)
                         }

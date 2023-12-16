@@ -1,0 +1,113 @@
+{
+    "info": {
+      "id": "80703",
+      "name": "Aryan Family's Delight",
+      "cloudinaryImageId": "kb34u4pywk49ksbyn4g5",
+      "locality": "Sardar Patel Marg",
+      "areaName": "Civil Lines",
+      "costForTwo": "₹400 for two",
+      "cuisines": [
+        "North Indian",
+        "South Indian",
+        "Fast Food",
+        "Snacks",
+        "Burgers",
+        "Chinese"
+      ],
+      "avgRating": 4.4,
+      "feeDetails": {
+        "restaurantId": "80703",
+        "fees": [
+          {
+            "name": "BASE_DISTANCE",
+            "fee": 1400
+          },
+          {
+            "name": "BASE_TIME"
+          },
+          {
+            "name": "ANCILLARY_SURGE_FEE"
+          }
+        ],
+        "totalFee": 1400
+      },
+      "parentId": "6001",
+      "avgRatingString": "4.4",
+      "totalRatingsString": "10K+",
+      "sla": {
+        "deliveryTime": 18,
+        "lastMileTravel": 0.3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "18 mins",
+        "lastMileTravelString": "0.3 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-15 23:00:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "aggregatedDiscountInfoV2": {
+        
+      },
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "orderabilityCommunication": {
+        "title": {
+          
+        },
+        "subTitle": {
+          
+        },
+        "message": {
+          
+        },
+        "customIcon": {
+          
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      "context": "seo-data-9b07469c-bd4e-41a1-baa7-cf3927f99e2e"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/aryan-familys-delight-sardar-patel-marg-civil-lines-allahabad-80703",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  }
