@@ -20,15 +20,15 @@ const Body = () => {
             "https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.4529334&lng=81.8348882&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
             );
         const json = await data.json();
-        setListOfRestaurant(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-        setFilteredRestaurant(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setListOfRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setFilteredRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
     
     const onlineStatus = useOnlineStatus();
     if(onlineStatus === false) return <h1>Looks like you are offline!! Please Check your internet connection</h1>
 
     //conditional rendering
-
+    console.log( "Error", listOfRestaurant)
     return listOfRestaurant.length === 0 ? ( <Shimmer /> ): (
         <div className="body">
             <div className="filter flex">
